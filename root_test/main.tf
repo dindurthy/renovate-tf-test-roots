@@ -12,5 +12,5 @@ module "test_bucket" {
 }
 # Test module in git monorepo
 module "test_module" {
-  source  = "github.com/acaylor/renovate-tf-test-modules.git//modules/test-module?ref=test-module-v0.0.1"
+  source  = "github.com/acaylor/renovate-tf-test-modules.git//modules/test-module?ref=test-module-v1.0.0"
 }
