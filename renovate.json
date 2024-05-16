@@ -10,6 +10,7 @@
     {
       "matchDatasources": ["github-tags"],
       "matchSourceUrls": ["https://github.com/acaylor/renovate-tf-test-modules"],
+      "versionCompatibility": "^(?<compatibility>.*)-(?<version>.*)$",
       "versioning": "regex:^((?<compatibility>.*)-v|v?)(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
     }
   ]
