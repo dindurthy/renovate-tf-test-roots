@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "config:recommended",
+    ":separateMultipleMajorReleases",
+    ":ignoreUnstable",
+    ":dependencyDashboard"
+  ],
+  "configMigration": true,
+  "packageRules": [
+    {
+      "matchDatasources": ["github-tags"],
+      "matchSourceUrls": ["github.com/acaylor/renovate-tf-test-modules"],
+      "versionCompatibility": "^(?<compatibility>.*)-(?<version>.*)$",
+      "versioning": "semver"
+    }
+  ]
+}
