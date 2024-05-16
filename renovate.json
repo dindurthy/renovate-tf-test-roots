@@ -6,8 +6,12 @@
     ":dependencyDashboard"
   ],
   "configMigration": true,
-  "terraform": {
-    "matchSourceUrls": ["github.com/acaylor/renovate-tf-test-modules"],
-    "versioning": "regex:^((?<compatibility>.*)-v|v*)(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
-  }
+  "packageRules": [
+    {
+      "matchDatasources": ["github-tags"],
+      "matchSourceUrls": ["github.com/acaylor/renovate-tf-test-modules"],
+      "versionCompatibility": "^(?<compatibility>.*)-(?<version>.*)$",
+      "versioning": "semver"
+    }
+  ]
 }
