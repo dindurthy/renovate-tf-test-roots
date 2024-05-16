@@ -10,8 +10,7 @@
     {
       "matchDatasources": ["github-tags"],
       "matchSourceUrls": ["https://github.com/acaylor/renovate-tf-test-modules"],
-      "versionCompatibility": "^(?<compatibility>.*)-(?<version>.*)$",
-      "versioning": "semver"
+      "versionCompatibility": "^(?<compatibility>.*)-(?<version>.*)$"
     }
   ],
 	"terraform": {
