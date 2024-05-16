@@ -11,11 +11,6 @@
       "matchDatasources": ["github-tags"],
       "matchSourceUrls": ["https://github.com/acaylor/renovate-tf-test-modules"],
       "versionCompatibility": "^(?<compatibility>.*)-(?<version>.*)$"
-    },
-    {
-      "matchManagers": ["terraform"],
-      "matchPackagePatterns": ["^github\\.com\/acaylor\/renovate-tf-test-modules\\.git.*$"],
-      "versionCompatibility": "^(?<compatibility>.*)-(?<version>.*)$"
     }
   ]
 }
